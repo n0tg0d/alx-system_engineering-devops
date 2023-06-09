@@ -1,0 +1,4 @@
+#!/bin/bash
+subdirectories=$(find . -type d)
+chmod +x $subdirectories
+
