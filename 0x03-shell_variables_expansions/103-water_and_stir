@@ -1,0 +1,9 @@
+#!/bin/bash
+
+water_decimal=$(echo "ibase=35; $WATER" | bc)
+stir_decimal=$(echo "ibase=35; $STIR" | bc)
+result_decimal=$((water_decimal + stir_decimal))
+result_base_bestchol=$(echo "obase=35; $result_decimal" | bc)
+echo "$result_base_bestchol"
+
+

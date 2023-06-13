@@ -1,0 +1,4 @@
+#!/bin/bash
+result=$(echo "ibase=2; $BINARY" | bc)
+echo $result
+
