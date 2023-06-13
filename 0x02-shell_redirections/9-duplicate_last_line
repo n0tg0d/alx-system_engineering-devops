@@ -1,0 +1,6 @@
+#!/bin/bash
+
+file="iacta"
+last_line=$(tail -n 1 "$file")
+printf "%s\n" "$last_line" >> "$file"
+

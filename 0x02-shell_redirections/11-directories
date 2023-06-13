@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Recursive function to count directories
+count_directories() {
+  local dir=$1
+  local count=0
+
+  for item in "$dir"/*; do
+    if [[ -d "$item" ]]; then
+      count=$((count + 1))
+      count=$((count + $(count_directories "$item"))) # Recursive call
+    fi
+  done
+
+  echo "$count"
+}
+
+count=$(count_directories .)
+echo "$count"
+
