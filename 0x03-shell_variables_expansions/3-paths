@@ -1,4 +1,3 @@
 #!/bin/bash
 count=$(echo $PATH | tr ':' '\n' | wc -l)
 echo $count
-
