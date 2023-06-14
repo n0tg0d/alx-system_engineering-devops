@@ -1,11 +1,2 @@
 #!/bin/bash
-for ((i=97; i<=122; i++)); do
-    for ((j=97; j<=122; j++)); do
-        letter1=$(printf "\\$(printf '%03o' "$i")")
-        letter2=$(printf "\\$(printf '%03o' "$j")")
-        combination="$letter1$letter2"
-        if [ "$combination" != "oo" ]; then
-            echo "$combination"
-        fi
-    done
-done
+echo {a..z}{a..z} | tr " " "\n" | grep -v "oo"
