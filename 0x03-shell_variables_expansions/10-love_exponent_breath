@@ -1,3 +1,2 @@
 #!/bin/bash
-result=$(echo "$BREATH ^ $LOVE" | bc)
-echo $result
+echo $((BREATH**$LOVE))
