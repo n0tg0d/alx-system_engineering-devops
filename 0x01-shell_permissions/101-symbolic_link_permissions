@@ -1,3 +1,2 @@
 #!/bin/bash
 chown -h root:staff _hello
-

@@ -1,6 +1,2 @@
 #!/bin/bash
-
-number=$NUM
-formatted=$(printf "%.2f" "$number")
-echo "$formatted"
-
+printf "%.2f" $NUM | sort

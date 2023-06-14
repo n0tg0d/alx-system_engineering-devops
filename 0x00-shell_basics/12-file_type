@@ -1,7 +1,4 @@
 #!/bin/bash
-
 file_path="/tmp/iamafile"
-
 file_type=$(file -b "$file_path")
 echo "$file_path: $file_type"
-

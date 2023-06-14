@@ -1,11 +1,2 @@
 #!/bin/bash
-
-counter=0
-
-while IFS= read -r line; do
-    if (( counter % 2 == 0 )); then
-        echo "$line"
-    fi
-    counter=$(( counter + 1 ))
-done
-
+perl -lne 'print if $. % 2 ==1'
